@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import quick
 
 class quickTests: XCTestCase {
     
@@ -28,6 +29,11 @@ class quickTests: XCTestCase {
     
     func testFailure() {
         XCTAssert(false, "Test failed very badly")
+    }
+    
+    func testAFNetworking() {
+        var manager = AFHTTPRequestOperationManager(baseURL: NSURL(string: "http://www.touchofmodern.com")!)
+        XCTAssert(manager != nil , "Manager should not be nil")
     }
     
     func testPerformanceExample() {
