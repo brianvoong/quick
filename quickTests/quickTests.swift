@@ -26,6 +26,10 @@ class quickTests: XCTestCase {
         XCTAssert(true, "Pass")
     }
     
+    func testFailure() {
+        XCTAssert(false, "Test failed very badly")
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {
